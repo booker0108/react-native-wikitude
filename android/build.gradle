@@ -28,8 +28,7 @@ dependencies {
 
     def constraintLayoutVersion = project.hasProperty('constraintLayoutVersion') ? project.constraintLayoutVersion : DEFAULT_CONSTRAINT_LAYOUT_VERSION
 
-	//compile fileTree(include: ['*.jar'], dir: 'libs')
-	implementation project(':wikitudesdk')
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
     implementation 'com.facebook.react:react-native:+'
     implementation 'com.android.support.constraint:constraint-layout:' + constraintLayoutVersion
 }

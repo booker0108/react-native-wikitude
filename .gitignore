@@ -25,3 +25,7 @@ project.xcworkspace
 .settings
 local.properties
 *.iml
+
+# Wikitude SDK
+ios/lib/*.framework
+android/libs/*.aar
